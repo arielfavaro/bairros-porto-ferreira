@@ -10,8 +10,7 @@ import Alpine from 'alpinejs';
 Alpine.start();
 
 // inicializa o mapa
-const map = L.map('map').setView([-23.5505, -46.6333], 12);
-// aqui, view inicial em São Paulo; ajuste conforme seus dados
+const map = L.map('map').setView([-21.861884, -47.4787214], 12);
 
 // adiciona um tile layer (OpenStreetMap)
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
