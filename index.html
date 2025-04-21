@@ -23,6 +23,8 @@
                 <p>Os dados utilizados foram extraídos do <a href="https://www.ibge.gov.br/estatisticas/sociais/populacao/38734-cadastro-nacional-de-enderecos-para-fins-estatisticos.html" target="_blank">Cadastro Nacional de Endereços para Fins Estatísticos (CNEFE) do IBGE</a>, ano base 2022.</p>
                 <p>Inicialmente, os dados foram importados para um banco de dados PostgreSQL, com suporte à extensão espacial PostGIS. A partir disso, foi realizada uma análise de clusterização espacial utilizando o algoritmo DBSCAN, considerando agrupamentos de pontos com distância máxima de 500 metros entre si e contendo no mínimo 15 registros por agrupamento.</p>
                 <p>Para cada cluster identificado, foi gerada uma geometria aproximada utilizando o método Convex Hull, representando a área de concentração de endereços por localidade.</p>
+
+                <p class="made-by">App feito por <a href="https://ariel.dev.br" target="_blank">Ariel.dev</a></p>
               </div>
             </div>
         </div>

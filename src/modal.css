@@ -39,3 +39,8 @@
     box-shadow: 6px 6px 12px #0000005c;
     padding: 12px;
 }
+
+.modal-body .made-by {
+    font-size: .75rem;
+    text-align: end;
+}
