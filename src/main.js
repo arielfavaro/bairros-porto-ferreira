@@ -1,7 +1,13 @@
 import './style.css'
+import './modal.css'
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import { point as turfPoint, booleanPointInPolygon } from '@turf/turf';
+import Alpine from 'alpinejs';
+
+// window.Alpine = Alpine;
+
+Alpine.start();
 
 // inicializa o mapa
 const map = L.map('map').setView([-23.5505, -46.6333], 12);
