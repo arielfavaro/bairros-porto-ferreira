@@ -10,6 +10,11 @@
   <body>
     <div id="app">
       <div id="map"></div>
+
+      <select id="bairros" class="select-bairros">
+        <option value="" selected disabled>Localize um Bairro</option>
+      </select>
+
       <div x-data="{ open: false }">
         <button x-on:click="open = ! open" class="btn-info">i</button>
      
