@@ -4,7 +4,10 @@
 - Realizado tratamento de nomes de alguns bairros
 - Realizado clusterização por nome do bairro
 
-## Consultas SQL
+Obs.: Itens referentes ao processo de importação dos dados originais para o Postgres, tratamento, clusterização e geração do arquivo GeoJSON não estão incluídos nesse repositório.
+O tratamento dos dados poderia ser feito também em python com geopandas ou semelhante.
+
+## Anotações de consultas SQL (Postgres)
 ```sql
 CREATE OR REPLACE VIEW vw_bairros_porto_ferreira AS
 -- 1) Identifica clusters por bairro
@@ -14,7 +17,7 @@ WITH clusters AS (
     localidade,
     geometria,
     ST_ClusterDBSCAN(
-      ST_Transform(geometria,3857), -- reprojeta de 4326 -> UTM(m)
+      ST_Transform(geometria,3857), -- reprojetar de 4326 -> UTM(m)
       eps       := 500, -- 500 m
       minpoints := 15 -- cluster mínimo de 15 pontos
     ) OVER (PARTITION BY localidade) AS cluster_id
