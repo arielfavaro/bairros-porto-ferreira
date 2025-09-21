@@ -5,7 +5,8 @@
 - Realizado clusterização por nome do bairro
 
 Obs.: Itens referentes ao processo de importação dos dados originais para o Postgres, tratamento, clusterização e geração do arquivo GeoJSON não estão incluídos nesse repositório.
-O tratamento dos dados poderia ser feito também em python com geopandas ou semelhante.
+
+Para ver o script de processamento e clusterização dos dados, acesse [esse repositório](https://github.com/arielfavaro/bairros-porto-ferreira-scripts)
 
 ## Anotações de consultas SQL (Postgres)
 ```sql
